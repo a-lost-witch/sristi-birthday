@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff3f7" />
+  <title>Happy Birthday, Sristi! 🎀</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+    :root{--pink:#f5a9c4;--rose:#d96d96;--ink:#593b50;--cream:#fffaf6;--lav:#e9defa;--peach:#ffe2d5}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;z-index:-1;background-image:radial-gradient(#e8a7c1 1px,transparent 1px);background-size:22px 22px}
+    .nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:auto;padding:22px 6%;font-size:.9rem}.brand{font-weight:700;letter-spacing:.04em}.brand span{color:var(--rose)}.pill{border:1px solid #f0c7d6;background:#fff8fb;border-radius:999px;padding:9px 14px;color:var(--ink);text-decoration:none}
+    .hero{min-height:82vh;display:grid;place-items:center;text-align:center;padding:35px 20px 70px;position:relative}.hero-inner{max-width:760px;position:relative}.eyebrow{display:inline-block;background:#fff;border:1px solid #f4cbd9;padding:9px 15px;border-radius:999px;font-size:.82rem;letter-spacing:.06em;color:var(--rose)}
+    h1,h2{font-family:'Playfair Display',serif;font-weight:600}h1{font-size:clamp(3.3rem,9vw,7rem);line-height:.98;margin:24px 0 18px;letter-spacing:-.055em}h1 em{color:var(--rose);font-style:normal;display:block}.sub{font-size:clamp(1rem,2.4vw,1.18rem);line-height:1.8;max-width:560px;margin:0 auto 28px;color:#79596e}.btn{border:0;border-radius:999px;padding:14px 22px;background:var(--rose);color:white;font:600 1rem 'DM Sans',sans-serif;box-shadow:0 9px 22px #d96d9633;cursor:pointer;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 13px 26px #d96d9644}.music-toggle{display:none;margin:14px auto 0;border:1px solid #f0c7d6;border-radius:999px;padding:9px 14px;background:#fff8fb;color:var(--ink);font:500 .9rem 'DM Sans',sans-serif;cursor:pointer}.music-toggle.visible{display:block}.hero-bow{font-size:4rem;position:absolute;top:-48px;right:5%;transform:rotate(12deg);filter:drop-shadow(0 8px 8px #d96d9622)}.float{position:absolute;font-size:clamp(1.6rem,4vw,3rem);animation:bob 4s ease-in-out infinite}.f1{left:8%;top:18%}.f2{right:9%;bottom:18%;animation-delay:1s}.f3{left:15%;bottom:12%;animation-delay:2s}.f4{right:16%;top:12%;animation-delay:.5s}@keyframes bob{50%{transform:translateY(-13px) rotate(7deg)}}
+    section{padding:75px 6%}.section-inner{max-width:1000px;margin:auto}.section-label{text-transform:uppercase;letter-spacing:.18em;font-size:.74rem;color:var(--rose);font-weight:700}h2{font-size:clamp(2.1rem,5vw,3.5rem);margin:12px 0 16px;letter-spacing:-.035em}.intro{max-width:620px;line-height:1.8;color:#79596e}
+    .letter-wrap{background:#fff;border:1px solid #f2d6e0;border-radius:28px;padding:clamp(24px,5vw,48px);box-shadow:0 20px 60px #75435c0b;position:relative;overflow:hidden}.letter-wrap:after{content:'♡';position:absolute;right:25px;top:0;font-size:6rem;color:#fce8ef;line-height:1}.letter{position:relative;z-index:1;max-width:720px;line-height:1.95;font-size:1.03rem}.letter p{margin:0 0 16px}.signature{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--rose);margin-top:20px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.card{min-height:175px;padding:22px;border-radius:22px;border:1px solid #f2d6e0;background:#fff;transition:transform .2s}.card:hover{transform:translateY(-5px) rotate(-.5deg)}.card .emoji{font-size:2rem}.card h3{margin:12px 0 7px;font-family:'Playfair Display',serif;font-size:1.25rem}.card p{margin:0;color:#86697b;line-height:1.65;font-size:.92rem}
+    .gallery{background:#fff0f5}.gallery-grid{display:grid;grid-template-columns:1.1fr .9fr 1fr;gap:14px;margin-top:28px}.tile{border-radius:22px;min-height:190px;display:grid;place-items:center;text-align:center;padding:20px;position:relative;overflow:hidden}.tile:nth-child(1){background:#f9dce8}.tile:nth-child(2){background:#e9e0fa}.tile:nth-child(3){background:#ffe5d8}.tile:nth-child(4){background:#e7f0e4}.tile:nth-child(5){background:#fff1bd}.tile:nth-child(6){background:#f4dff2}.tile .big{font-size:3.2rem;display:block;margin-bottom:8px}.tile strong{font-family:'Playfair Display',serif;font-size:1.15rem}.tile small{display:block;margin-top:5px;opacity:.75}
+    .wish{text-align:center;background:linear-gradient(135deg,#fff4f8,#f4edff);padding:90px 6%}.wish p{max-width:600px;margin:0 auto 25px;line-height:1.8;color:#79596e}.secret{display:none;max-width:620px;margin:25px auto 0;padding:22px;border-radius:20px;background:#fff;border:1px dashed #e5a6bf;line-height:1.8;animation:appear .4s ease}.secret.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}footer{text-align:center;padding:25px;font-size:.82rem;color:#a17d91} .sprinkle{position:fixed;top:-20px;z-index:5;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.2}}
+    @media(max-width:700px){.cards{grid-template-columns:1fr}.card{min-height:0}.gallery-grid{grid-template-columns:1fr 1fr}.tile{min-height:160px}.hero{min-height:78vh}.f1{left:3%}.f2{right:3%}.hero-bow{right:0;top:-60px}}
+    @media(max-width:420px){.gallery-grid{grid-template-columns:1fr 1fr}.tile{padding:14px}.tile .big{font-size:2.5rem}.nav{padding:18px 5%}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="brand">little <span>love notes</span> 🎀</div><a class="pill" href="#letter">a note for you ↓</a></nav>
+  <header class="hero">
+    <span class="float f1" aria-hidden="true">🎨</span><span class="float f2" aria-hidden="true">🐈</span><span class="float f3" aria-hidden="true">🎧</span><span class="float f4" aria-hidden="true">✿</span>
+    <div class="hero-inner"><div class="hero-bow" aria-hidden="true">🎀</div><span class="eyebrow">OCTOBER 22 · YOUR SPECIAL DAY</span><h1>Happy Birthday,<em>Sristi!</em></h1><p class="sub">A little place in the internet for the girl who makes the world a little more vibrant. ♡</p><button class="btn" id="confettiBtn">Open your birthday magic ✨</button><button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">♫ Birthday music: off</button></div>
+  </header>
+  <section id="letter"><div class="section-inner"><span class="section-label">01 · from my heart</span><h2>A tiny letter for you</h2><p class="intro">If you find it creepy, just consider my last night's weirdly written whatsapp text the final one</p>
+    <div class="letter-wrap"><div class="letter"><p>Dear Sristi,</p><p>Happy, happy birthday Pookie! 🎂 So umm ektu late holo 'cause pujor somoy b'day sucks and as per my mother ami Durgar sathe nijer brain tao bisorjon diye diyechi Kal Ganga e, so I am feelin kinda lazy. Anyways feeling greeted by you feels like being greeted by a cat that has decided you are its person. (Insert more emotional sap, 'cause I fucking can't). Also I once planned to use my github as a portfolio for job interviews, but here I am cussing here (info noone asked for). Also the coding part is done by chatgpt 'cause I am an (nam ka waste) engineer who cant fucking code (more info no one asked for)</p><p>May you always have reasons to make art, music to get lost in, stories that keep you up way too late, and people who love the wonderfully you-shaped things about you. Keep being your bright, curious, big-hearted self. The world needs people who feel things deeply, dream loudly, and bring their own kind of colour into every room.💗</p><p class="signature">With lots of love ♡</p></div></div>
+  </div></section>
+  <section><div class="section-inner"><span class="section-label">02 · birthday wishes</span><h2>Things I hope find you</h2><p class="intro">A little birthday wish-list for your next trip around the sun.</p><div class="cards">
+    <article class="card"><span class="emoji">📚</span><h3>Stories worth keeping</h3><p>May you get lost in a tiny, cozy bookstore, hearing your favourite song at exactly the right moment, and you trip ('cause you are clumsy duh) and a handsome man cages you and picks up your going-to-be-fvt-book from the rack preventing you from falling. A good book and a boy to keep you company baby!</p></article>
+    <article class="card"><span class="emoji">🎨</span><h3>Colour outside the lines</h3><p>New ideas, messy masterpieces, happy accidents, and the courage to make things just because.</p></article>
+    <article class="card"><span class="emoji">🎶</span><h3>Your own soundtrack</h3><p>Tor gola valo, so chakri bakri na pele next Ranu Mondal incoming.</p></article>
+    <article class="card"><span class="emoji">🐈</span><h3>Unreasonable creature love</h3><p>Soft paws, tiny meows, warm naps, and at least one cat/ dog who chooses you as its favourite human. (amra kno sudhu tor ottachar sojjo krbo? Tui o karo ottachar sojjo kor)</p></article>
+    <article class="card"><span class="emoji">🎀</span><h3>More cute little things</h3><p>Manifesting 100 Pretty bows for you, jeta pore tui bou seje bose thakbi</p></article>
+    <article class="card"><span class="emoji">🌷</span><h3>Big, bright joy</h3><p>People who show up, adventures you didn't plan, and the kind of happiness that sneaks up on you.</p></article>
+  </div></div></section>
+  <section class="gallery"><div class="section-inner"><span class="section-label">03 · your little universe</span><h2>A moodboard for Sristi</h2><p class="intro">A few things that reminds one of you.</p><div class="gallery-grid">
+    <div class="tile"><div><span class="big">🎀</span><strong>Bow season</strong><small>extra ribbons, always</small></div></div><div class="tile"><div><span class="big">📖</span><strong>One more chapter</strong><small>just five more minutes…</small></div></div><div class="tile"><div><span class="big">🐾</span><strong>Cat-approved</strong><small>tiny paws, huge personality</small></div></div><div class="tile"><div><span class="big">🖌️</span><strong>Made with feeling</strong><small>art for art's sake</small></div></div><div class="tile"><div><span class="big">🎧</span><strong>On repeat</strong><small>main-character soundtrack</small></div></div><div class="tile"><div><span class="big">💌</span><strong>Little love notes</strong><small>saved for a rainy day</small></div></div>
+  </div></div></section>
+  <section class="wish"><div class="section-inner"><span class="section-label">04 · one last thing</span><h2>Make a birthday wish ✨</h2><p>Close your eyes for a second, make a wish that belongs only to you, and then tap the button. No peeking at the universe's reply until you're ready. (or don't do these pointless nekamo and just click the big button 'cause button pressing is way more fun than make believe nonsense)</p><button class="btn" id="wishBtn">My wish is made 🌟</button><div class="secret" id="secret">🌷 May you find a bf as lovely as fictional ones. May he endure your love bites, cause we sure as hell can't. May you get good grades, good sleep and a good job so you can treat me (yep trt ta due roilo)🎀💗</div></div></section>
+  <footer>Okk bye · 22.10.26</footer>
+  <script>
+    const confettiBtn=document.getElementById('confettiBtn');
+    const musicToggle=document.getElementById('musicToggle');
+    let audioContext=null, musicTimer=null, noteIndex=0, musicOn=false;
+    // A tiny original music-box melody, synthesized by the browser (no audio file needed).
+    const melody=[523.25,659.25,783.99,659.25,587.33,698.46,783.99,698.46,523.25,587.33,659.25,523.25,440,523.25,587.33,523.25];
+    function playBell(freq, startAt){
+      const osc=audioContext.createOscillator(), gain=audioContext.createGain();
+      osc.type='sine'; osc.frequency.setValueAtTime(freq,startAt);
+      gain.gain.setValueAtTime(0.0001,startAt);
+      gain.gain.exponentialRampToValueAtTime(0.075,startAt+0.025);
+      gain.gain.exponentialRampToValueAtTime(0.0001,startAt+0.72);
+      osc.connect(gain); gain.connect(audioContext.destination);
+      osc.start(startAt); osc.stop(startAt+0.75);
+    }
+    async function startMusic(){
+      const AudioCtx=window.AudioContext||window.webkitAudioContext;
+      if(!AudioCtx){alert('This browser does not support generated music. Try a recent version of Chrome.');return;}
+      if(!audioContext) audioContext=new AudioCtx();
+      if(audioContext.state==='suspended') await audioContext.resume();
+      if(musicOn) return;
+      musicOn=true; musicToggle.classList.add('visible'); musicToggle.textContent='♫ Birthday music: on'; musicToggle.setAttribute('aria-pressed','true');
+      const playNext=()=>{if(!musicOn||!audioContext)return;const now=audioContext.currentTime;playBell(melody[noteIndex],now+0.03);noteIndex=(noteIndex+1)%melody.length;};
+      playNext(); musicTimer=window.setInterval(playNext,460);
+    }
+    function stopMusic(){musicOn=false;if(musicTimer!==null){clearInterval(musicTimer);musicTimer=null;}musicToggle.textContent='♫ Birthday music: off';musicToggle.setAttribute('aria-pressed','false');}
+    musicToggle.addEventListener('click',()=>{if(musicOn)stopMusic();else startMusic().catch(()=>{});});
+    function sprinkle(){const symbols=['🎀','💗','✨','🌸','⭐','🐾','💕'];for(let i=0;i<42;i++){const el=document.createElement('span');el.className='sprinkle';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(14+Math.random()*18)+'px';el.style.animationDuration=(3+Math.random()*4)+'s';el.style.animationDelay=(Math.random()*1.2)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),8000)}}
+    confettiBtn.addEventListener('click',()=>{sprinkle();startMusic().catch(()=>{});confettiBtn.textContent='Birthday magic activated! 💖';setTimeout(()=>confettiBtn.textContent='Open your birthday magic ✨',2600)});
+    document.getElementById('wishBtn').addEventListener('click',()=>{document.getElementById('secret').classList.toggle('show');sprinkle();document.getElementById('wishBtn').textContent=document.getElementById('secret').classList.contains('show')?'A little wish, just for you 💗':'My wish is made 🌟'});
+  </script>
+</body>
+</html>
